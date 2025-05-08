@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 
+
 interface HoverZoneProps {
   id: string;
   x: number;

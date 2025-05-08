@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { TEXT_CHALLENGE_ANSWER } from '../utils/constants';
 import styles from '../styles/Home.module.css';
 
+
 interface TextChallengeProps {
   onComplete: () => void;
   className?: string;
@@ -47,7 +48,7 @@ const TextChallenge: React.FC<TextChallengeProps> = ({ onComplete, className }) 
           type="text"
           value={input}
           onChange={handleInputChange}
-          placeholder="Enter constellation name"
+          placeholder="Enter the answer"
           maxLength={10}
           style={{
             borderColor: error ? 'var(--error)' : success ? 'var(--success)' : '',

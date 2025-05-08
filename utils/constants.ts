@@ -196,7 +196,7 @@ export const LENS_ZONES = [
     width: 15,
     height: 10,
     requiredLens: 'uv',
-    message: 'I shine brightly, lighting the way,But vanish entirely at the start of the day.What am I?'
+    message: 'I am round and bright in the dark of the night,'
   },
   {
     id: 'lens2',
@@ -206,7 +206,7 @@ export const LENS_ZONES = [
     width: 15,
     height: 10,
     requiredLens: 'uv',
-    message: 'I am round and bright in the dark of the night,Though I borrow my glow, I am a beautiful sight.What am I?'
+    message: 'Though I borrow my glow, I am a beautiful sight.What am I?'
   }
 ];
 

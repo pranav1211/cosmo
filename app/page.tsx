@@ -1,13 +1,15 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Head from 'next/head';
 import HoverZone from '../components/HoverZone';
 import DragLens from '../components/DragLens';
 import RiddleZone from '../components/RiddleZone';
 import TextChallenge from '../components/TextChallenge';
 import ResetButton from '../components/ResetButton';
-import { useGameState } from '../utils/gameState';
+import { GameStateProvider, useGameState } from '../utils/gameState';
 import { REGIONS, HOVER_ZONES, RIDDLE_ZONES, LENS_ZONES } from '../utils/constants';
+import '../styles/globals.css';
 import styles from '../styles/Home.module.css';
 
 // Helper functions for session storage
@@ -22,7 +24,23 @@ const getDiscoveredPlanets = () => {
   }
 };
 
-export default function ScammerPage() {
+export default function ChronoScapePage() {
+  return (
+    <>
+      <Head>
+        <title>Chronoscape Lite</title>
+        <meta name="description" content="A space-time exploration puzzle" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <GameStateProvider>
+        <GameContent />
+      </GameStateProvider>
+    </>
+  );
+}
+
+function GameContent() {
   const { litRegions, lightUpRegion, isGameComplete, lensType, unlockUVLens, allRegionsLit } = useGameState();
   const [showTextChallenge, setShowTextChallenge] = useState(false);
   const [showNextButton, setShowNextButton] = useState(false);

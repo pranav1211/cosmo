@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from '../styles/Home.module.css';
+import styles from './app/styles/Home.module.css';
 
 interface InkZoneProps {
   id: string;

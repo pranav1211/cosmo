@@ -41,7 +41,7 @@ const TextChallenge: React.FC<TextChallengeProps> = ({ onComplete, className }) 
     <div className={`${styles.textChallenge} ${className || ''}`}>
       <h3>Final Challenge</h3>
       <p>Based on the secret riddles answer the quesion</p><br />
-      <p>To find this riddle we need change our view. click on a certain key of the keyboard till use the lens(pointer) change, then hover to find the riddle</p>
+      <p>To find this riddle we need change our view. click on a certain key of the keyboard till u see the lens(pointer) change, then hover to find the riddle</p>
       
       <form onSubmit={handleSubmit}>
         <input

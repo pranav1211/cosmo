@@ -8,7 +8,7 @@ The **Planet Finder** puzzle challenges participants to locate specific planets 
 
 ## Puzzle Creator  
 The **Planet Finder** puzzle was designed and implemented by:  
-- **Shriyansh Nayak**  
+- **Shriyans Nayak**  
 
 With the help of:  
 - **Pranav Veeraghanta**  
